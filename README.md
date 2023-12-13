@@ -5,3 +5,4 @@ To use the calculator drag and drop your pdf file under the gpa_calculator direc
 
 ![image](https://github.com/Atman-Singh/gpa_calculator/assets/39840838/588d690a-2b7d-48fc-a4da-afe0282cb154)
 
+If you get an error that says that it doesn't recognize PyPDF2, run pip install PyPDF2 in the terminal
