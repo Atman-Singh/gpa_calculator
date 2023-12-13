@@ -3,10 +3,6 @@ import PyPDF2
 
 def main():
     grades, weightages = extract_data('transcript.pdf')
-    # del grades[42:48]
-    # del weightages[42:48]
-    # grades = grades[6:]
-    # weightages = weightages[6:]
     print(grades)
     print(weightages)
     print('GPA:', average(grades, weightages))
@@ -25,7 +21,7 @@ def extract_data(pdf):
 
 
 def check_if_slash(word):
-    return word.__contains__('/') and not word.lower().__contains__('cr')
+    return word.__contains__('/') and not word.lower().__contains__('cr') and not word.lower().__contains__('comp')
 
 
 def check_if_grade(word):
